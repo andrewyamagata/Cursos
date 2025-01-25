@@ -1,0 +1,53 @@
+h1,
+h2,
+h3,
+p {
+  font-family: "Rotobo", sans-serif;
+}
+
+h1 {
+  font-size: 64px;
+  line-height: 0.2;
+}
+
+h2 {
+  font-size: 32px;
+  line-height: 0.2;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 0.2;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+a {
+  font-style: italic;
+  text-decoration: none;
+  color: salmon;
+}
+
+.realce {
+  font-style: italic;
+  font-weight: bold;
+  color: #000000;
+  /* HEXADECIMAL */
+}
+
+.caixa-alta {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
+  color: rgba(174, 255, 120, 0.548);
+  /* RGB com Trransparência*/
+}
+
+.caixa-baixa {
+  text-transform: lowercase;
+  font-style: italic;
+  color: blue;
+}

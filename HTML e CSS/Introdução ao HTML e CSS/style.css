@@ -1,0 +1,40 @@
+/* Tipos de Seletores: 3 Grandes  - Tag, IDs e Classes */
+
+/* TAG */
+
+p {
+  font-size: 15px;
+}
+/* Todo parágrafo vai receber */
+
+h2 {
+  color: blueviolet;
+}
+/* Todo h2 vai recerber */
+
+p span {
+  font-size: 15px;
+  color: chocolate;
+}
+
+/* ID*/
+
+#primeiro-paragrafo,
+#segundo-paragrafo,
+#terceiro-paragrafo {
+  font-size: 15px;
+}
+
+/* Classe */
+.paragrafo {
+  color: aqua;
+}
+
+p.span-textinho {
+  font-size: 15px;
+  color: greenyellow;
+}
+p .span-textinho {
+  font-size: 15px;
+  color: rgb(47, 50, 255);
+}
