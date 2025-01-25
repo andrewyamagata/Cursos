@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      main {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      div {
+        margin-bottom: 15px;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #45a049;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <h2>Newsletter</h2>
+
+        <form action="">
+          <div>
+            <label for="name">Nome (Apenas letras)</label> <br />
+            <input
+              id="name"
+              name="name"
+              type="text"
+              pattern="[a-zA-Z\s]+"
+              title="Só aceita letras"
+              placeholder="Seu primeiro nome"
+              required
+            />
+          </div>
+
+          <div>
+            <label for="email">E-mail</label><br />
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Seu melhor e-mail"
+              required
+            />
+          </div>
+          <div>
+            <label for="phone">Telefone</label><br />
+            <input
+              id="phone"
+              name="phone"
+              type="number"
+              pattern="[0-9]+"
+              placeholder="Seu Telefone"
+              required
+            />
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

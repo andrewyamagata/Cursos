@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Classe</title>
+</head>
+<body>
+    <style>
+       /* LVHA - link, visited, hover, active*/
+
+        a:link,
+        a:visited{
+            color: blue;
+            font-weight: 700;
+            font-style: italic;
+        }
+        /*
+        a:link{
+            color: orange
+        }
+        a:visited{
+            color: green;
+        }
+        */
+        a:hover{
+            font-weight: 100;
+        }
+
+        a:active{
+            color: yellow;
+        }
+        p:hover {
+            color: red;
+            font-size: 32px;
+            font-weight: 700;
+        }
+    </style>
+    <p>Meu parágrafo</p>
+    <a href="https://www.google.com.br" target="_blank">Minha âncora</a>
+</body>
+</html>

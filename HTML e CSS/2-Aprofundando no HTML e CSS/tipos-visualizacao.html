@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Visualização</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        /* Block
+        Ocupa todo o espaço horizontal
+        Quebra linas
+        Box model se aplica
+        Padding e Margin funcionam normalmente */
+        
+        /* Inline
+        Ocupa apenas o espaço do conteúdo
+        Não Quebra linas
+        Box model Não se aplica
+        Padding e Margin só funcionam na horizontal */
+        
+        /* Inline-block
+        Ocupa apenas o espaço do conteúdo
+        Não Quebra linas
+        Box model se aplica
+        Padding e Margin funcionam normalmente */
+        
+        h1 {
+            font-size: 3.2rem;
+        }
+
+        h2 {
+            display: inline-block;
+            font-size: 2.2rem;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        p {
+            display: block;
+            font-size: 1.2rem;
+        }
+
+        a {
+            display: inline; /*block quebra a linha, inline na mesma linha */
+            font-size: 1.2rem;
+            padding: 1rem;
+        }
+
+        span {
+            display: none; /* some */
+            font-style: italic;
+            color: red;
+        }
+    </style>
+
+    <div>
+        <h1>Meu Título</h1>
+        <h2>Meu Subtítulo</h2>
+        <h2>Meu Segundo Subtítulo</h2>
+        <a href="">Acesse meu site!</a>
+        <a href="">Acesse meu site!</a>
+        <p>
+            Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Donec efficitur ullamcorper dolor in sollicitudin. Mauris pulvinar mauris non turpis feugiat auctor. Maecenas dui erat, porta nec mattis non, semper non ex. Suspendisse in rutrum arcu. Phasellus luctus ex in sapien accumsan pulvinar. Integer eu posuere quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. <span>Praesent interdum sollicitudin rutrum.</span> Curabitur finibus arcu sit amet tortor pharetra, et vehicula magna venenatis. Quisque id quam at sem convallis varius non eget nulla. Donec convallis dui et magna feugiat luctus. Nulla congue libero nec orci malesuada, ac dignissim nisi feugiat.
+        </p>
+    </div>
+</body>
+</html>

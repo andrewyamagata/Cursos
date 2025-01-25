@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sombras</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        div {
+            margin: 10rem;
+            width: 20rem;
+            height: 20rem;
+            background-color: green;
+
+            /* deslocamento horizontal, deslocamento vertical, cor */
+            box-shadow: 1rem 2rem rgba(0, 0, 0, 0.2);
+
+            /* deslocamento horizontal, deslocamento vertical, raio de desfoque, cor */
+            box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+
+            /* inset (sombra dentro), deslocamento horizontal, deslocamento vertical, raio de desfoque, raio de propagação, cor */
+            box-shadow: inset 1rem 1rem 1rem 1rem rgba(0, 0, 0, 0.2);
+
+            /* Adicionando mais de uma sombra */
+            box-shadow:  1rem 1rem 1rem 2rem rgba(199, 7, 103, 0.2), -1rem -1rem 1rem 4rem rgba(11, 32, 100, 0.2);
+        }
+    </style>
+    <div></div>
+</body>
+</html>
