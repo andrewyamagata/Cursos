@@ -128,3 +128,10 @@ section {
 .div-condicoes .realce-italico {
   color: #78d4ff;
 }
+
+.img-wpp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  width: 8.5rem;
+}
