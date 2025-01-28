@@ -1,38 +1,49 @@
 /* Geral */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-li,
-a {
+html {
+  font-size: 62.5%;
+}
+
+body {
   font-family: "Montserrat", sans-serif;
   color: #404040;
+  font-size: 1.6rem;
+  line-height: 1.4;
 }
 
 h1 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 600;
 }
 
 h2 {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
 p {
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 strong {
   font-weight: 600;
 }
 
+a:link,
+a:visited {
+}
+
+a:hover,
+a:active {
+}
+
 .botao {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -41,7 +52,7 @@ strong {
 
 .item-lista-cabecalho a {
   color: #112e61;
-  font-size: 14px;
+  font-size: 1.4rem;
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 600;
@@ -50,17 +61,17 @@ strong {
 /* Seção Hero */
 
 h1 {
-  font-size: 35px;
+  font-size: 3.5rem;
   color: #404040;
   font-weight: 600;
 }
 
 .hero-paragrafo {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .hero-botao {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -68,7 +79,7 @@ h1 {
 /* Seção Conteúdos Gratuitos */
 /* .gratuito-h2 {
   font-weight: 400;
-  font-size: 35px;
+  font-size: 35rem;
 } */
 
 h2.gratuito-h2 span {
@@ -78,17 +89,17 @@ h2.gratuito-h2 span {
 
 .gratuito-h3 {
   font-weight: 700;
-  font-size: 23px;
+  font-size: 2.3rem;
 }
 
 .gratuito-item-lista {
-  font-size: 19px;
+  font-size: 1.9rem;
   text-decoration: none;
 }
 
 /* Seção Diferenciais */
 /* .diferenciais-h2 {
-  font-size: 35px;
+  font-size: 35rem;
   font-weight: 400;
 } */
 
@@ -97,17 +108,17 @@ h2.gratuito-h2 span {
 }
 
 /* .diferenciais-p {
-  font-size: 19px;
+  font-size: 19rem;
 } */
 
 .diferenciais-h3 {
   color: #005e88;
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
 }
 
 .diferenciais-h3-empresas {
-  font-size: 35px;
+  font-size: 3.5rem;
   font-weight: 400;
 }
 
@@ -126,7 +137,7 @@ h2.gratuito-h2 span {
 /*  Seção Blog */
 
 .blog-postadoem {
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 .blog-postadoem a {
@@ -136,13 +147,13 @@ h2.gratuito-h2 span {
 }
 
 .blog-titulopost {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 600;
   text-decoration: none;
 }
 
 .blog-descricaopost {
-  font-size: 17px;
+  font-size: 1.7rem;
 }
 
 /* Seção como ajudar */
@@ -153,7 +164,7 @@ h2.gratuito-h2 span {
 
 .comoajudar-lista,
 .comoajudar-paragrafo {
-  font-size: 19px;
+  font-size: 1.9rem;
 }
 
 .comoajudar-lista a,
@@ -176,17 +187,17 @@ h2.gratuito-h2 span {
 
 .rodape-titulo {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 
 .rodape-subtitulo {
   font-weight: 500;
-  font-size: 20px;
+  font-size: 2rem;
 }
 
 .rodape-seg-subtitulo {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 .rodape-link {
