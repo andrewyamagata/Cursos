@@ -17,6 +17,10 @@ body {
   line-height: 1.4;
 }
 
+ul {
+  list-style: none;
+}
+
 h1 {
   font-size: 3.32rem;
   line-height: 1;
@@ -85,10 +89,6 @@ nav {
   display: none;
 }
 
-nav ul {
-  list-style: none;
-}
-
 .item-lista-cabecalho a {
   color: #112e61;
   font-size: 1.4rem;
@@ -153,6 +153,51 @@ h1 {
 }
 
 /* Seção Conteúdos Gratuitos */
+
+.secao-conteudos {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcnNMJqq9lbEnJLj9CHNy2t8CebPZO5EV4Gg&s);
+  background-color: #b6b6b6;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.circulo-logo-curso {
+  display: inline-block;
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: #909ca1;
+  border-radius: 50%;
+  padding: 1.02rem;
+  box-shadow: 0 0.4rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.circulo-logo-curso img {
+  width: 100%;
+}
+
+.img-conteudos {
+  width: 44rem;
+}
+
+.caixa-cursos {
+  position: relative;
+  box-shadow: inset 0 0rem 0.6rem 0.2rem rgba(0, 0, 0, 0.1);
+  border-radius: 2.5rem;
+  padding: 2rem;
+}
+
+.caixa-gratuito-h3 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: inline-block;
+  background-image: linear-gradient(90deg, #8c0b91, #dd53ff);
+  padding: 0.42rem 1.02rem;
+  color: white;
+  border-radius: 1rem;
+  transform: rotate(-2.5deg) translate(-50%, -50%);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
 /* .gratuito-h2 {
   font-weight: 400;
   font-size: 35rem;
@@ -168,9 +213,25 @@ h2.gratuito-h2 span {
   font-size: 2.3rem;
 }
 
-.gratuito-item-lista {
+.gratuito-item-lista:link,
+.gratuito-item-lista:visited {
+  display: inline-block;
+  padding: 0.42rem 3.12rem;
+  background-color: #eee;
+  border-radius: 2.5rem;
   font-size: 1.9rem;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
   text-decoration: none;
+  color: inherit;
+}
+
+.gratuito-item-lista:hover,
+.gratuito-item-lista:active {
+  text-decoration: underline;
+}
+
+.gratuito-item-lista img {
+  width: 1.8rem;
 }
 
 /* Seção Diferenciais */
