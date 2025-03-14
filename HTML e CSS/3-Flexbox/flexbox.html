@@ -37,12 +37,26 @@
         gap: 4rem;
         /* row-gap: 4rem; */
         /* column-gap: 4rem; */
-        flex-flow: column wrap;
+        flex-flow: row;
         /* flex-direction: row; */
         /* flex-wrap: wrap; */
       }
 
       section {
+        /* flex-basis: 20rem;
+        flex-grow: 1;
+        flex-shrink: ; */
+        flex: 1;
+
+        /* flex: flex-basis; unidade*/
+        /* flex: flex-grow; fator/numero */
+        /* flex: flex-grow flex-basis; */
+        /* flex: flex-grow flex-shrink flex-basis; */
+      }
+
+      section:first-child {
+        flex-basis: 60rem;
+        flex-grow: 2;
         background-color: rgb(228, 135, 135);
       }
 
@@ -89,7 +103,7 @@
           gravida volutpat odio. Sed dapibus hendrerit dignissim.
         </p>
       </section>
-      <section>
+      <!-- <section>
         <h2>Meu subtítulo</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut
@@ -121,7 +135,7 @@
           nisi viverra lacinia. Etiam diam justo, malesuada aliquam leo et,
           gravida volutpat odio. Sed dapibus hendrerit dignissim.
         </p>
-      </section>
+      </section> -->
     </main>
   </body>
 </html>
