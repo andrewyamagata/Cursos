@@ -1,6 +1,8 @@
 from app import app
 from flask import render_template
 
+lista_usuarios = ['Lira', 'Amanda', 'Alon', 'Alessandra']
+
 @app.route('/')
 @app.route('/index')
 def index():
@@ -9,3 +11,7 @@ def index():
 @app.route('/contato')
 def contato():
     return render_template('contato.html')
+
+@app.route('/usuarios')
+def usuarios():
+    return render_template('usuarios.html', lista_usuarios=lista_usuarios)
