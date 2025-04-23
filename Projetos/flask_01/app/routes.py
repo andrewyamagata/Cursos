@@ -15,3 +15,7 @@ def contato():
 @app.route('/usuarios')
 def usuarios():
     return render_template('usuarios.html', lista_usuarios=lista_usuarios)
+
+@app.route('/login')
+def login():
+    return render_template('login.html')
