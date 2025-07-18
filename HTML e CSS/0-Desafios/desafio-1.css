@@ -92,7 +92,9 @@ li {
 }
 
 section {
-  padding: 2.4rem;
+  display: flex;
+  flex-flow: column;
+  gap: 3.12rem;
 }
 
 .realce-p {
@@ -129,4 +131,34 @@ section {
   bottom: 1rem;
   right: 1rem;
   width: 8.5rem;
+}
+
+.container-figure {
+  display: flex;
+  gap: 4.88rem;
+}
+
+.container-precocondicoes {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  gap: 3.12rem;
+}
+
+.container-preco,
+.div-condicoes {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
+}
+
+.container-listas {
+  display: flex;
+  gap: 3.9rem;
+}
+
+.container-lista {
+  display: flex;
+  flex-flow: column;
+  gap: 2rem;
 }
