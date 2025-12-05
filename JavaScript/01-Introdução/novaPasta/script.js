@@ -15,7 +15,6 @@ console.log(cor);
 // TIPO CONST
 const segundaMensagem = "Bem vindo ao curso Impressionador!";
 console.log(segundaMensagem);
-
 //tipo const não pode ser redeclarada ou criada novamente
 //não é mutável - não podemos reatribuir o valor -->> segundaMensagem = "Quero trocar a mensagem da minha variável";
 
@@ -31,3 +30,31 @@ console.log(nome);
 
 nome = "NossoNome";
 console.log(nome);
+
+// DIFERENÇAS ENTRE OS TIPOS DE DECLARAÇÃO
+
+// Redeclarações
+let nomeAluno = "Millene"; //Erro
+const nomeProfessor = "Daniel"; //Erro
+
+var mensagemTres = "Olá";
+console.log(mensagemTres);
+var mensagemTres = "Bem vindo";
+console.log(mensagemTres);
+
+// Reatribuições - Mutabilidade
+nomeAluno = "Lira";
+console.log(nomeAluno);
+//tipo const gera erro
+mensagemTres = "Olá, bem vindo!";
+console.log(mensagemTres);
+
+// Hoisting
+console.log(mensagemQuatro);
+var mensagemQuatro = "Utilizando Hoisting";
+console.log(mensagemQuatro);
+//Let e Const - Não fazem Hoisting
+
+// Visibilidade
+{instruções}
+function
