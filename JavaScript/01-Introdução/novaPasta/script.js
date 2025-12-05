@@ -56,5 +56,5 @@ console.log(mensagemQuatro);
 //Let e Const - Não fazem Hoisting
 
 // Visibilidade
-{instruções}
-function
+//{instruções} // Bloco de instrução
+//function() {instruções - tarefas especificas}
