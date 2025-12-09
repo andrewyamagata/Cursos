@@ -58,3 +58,18 @@ console.log(mensagemQuatro);
 // Visibilidade
 //{instruções} // Bloco de instrução
 //function() {instruções - tarefas especificas}
+{
+    console.log("Isso é um blobo")
+    let idade = 60;
+    const real = 50;
+    console.log(idade);
+    console.log(real);
+}
+
+function executar() {
+    console.log("Dentro da função");
+    var numero = 10;
+    console.log(numero);
+}
+
+executar()
