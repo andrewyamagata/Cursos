@@ -16,10 +16,7 @@ let isStudent = true;
 nome = "Prof Abobrinha";
 idade = 25;
 isStudent = false;
-
-console.log(nome);
-console.log(idade);
-console.log(isStudent);
+console.log(nome, idade, isStudent);
 
 //05.Crie uma variável constante que irá armazenar um número e imprima no console.
 const numeric = 7.16;
@@ -33,6 +30,7 @@ let telefone;
 let produto = "Feijão";
 let preco = 8.59;
 let qtd = 50;
+console.log(produto, preco, qtd);
 
 //08.Declare uma variável para armazenar o nome de uma cidade e outra para armazenar a sua população. Exiba uma mensagem combinando ambas as variáveis.
 let cidade = "Mogi das Cruzes";
