@@ -6,14 +6,14 @@ let produtos = ["Câmera", "Telefone", "Celular"];
 // 1.B Acesse e imprima o segundo produto.
 console.log(produtos[1]);
 // 1.C Modifique o terceiro produto para "Notebook" e imprima o array atualizado.
-produtos[1] = "Notebook";
+produtos[2] = "Notebook";
 console.log(produtos);
 
 // 2. Manipulação de Array
 // 2.A Crie um array chamado clientes contendo três nomes de clientes.
 let clientes = ["Ana", "João", "Carlos"];
 // 2.B Adicione um quarto cliente ao array.
-clientes[3] = "Julia";
+clientes[clientes.length] = "Julia"; // tamanho 3
 // 2.C Remova o último cliente e imprima o array atualizado.
 clientes.length = clientes.length - 1;
 console.log(clientes);
@@ -27,6 +27,7 @@ let produto = {
 };
 // 3.B Acesse e imprima o nome do produto.
 console.log(produto.nome);
+console.log(produto["nome"]);
 // 3.C Modifique o preço do produto e imprima o objeto atualizado.
 produto.preco = 1045;
 console.log(produto);
