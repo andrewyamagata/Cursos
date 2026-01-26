@@ -82,3 +82,60 @@ console.log(carro);
 
 carro.kmRodado = 15000;
 console.log(carro);
+
+//
+let livro = {
+    titulo: "Javascript para iniciantes",
+    autor: "João Silva",
+    ano: 2021,
+    genero: "Programação",
+};
+
+console.log(livro.titulo);
+
+livro.paginas = 300;
+console.log(livro);
+
+livro["idioma"] = "Português";
+console.log(livro);
+console.log("idioma" in livro);
+
+delete livro.idioma;
+console.log(livro);
+
+console.log("autor" in livro);
+console.log("idioma" in livro);
+
+// Manipulação dos tipos referências
+let listaA = [1, 2, 3];
+
+let listaB = listaA;
+listaB[0] = 99;
+console.log(listaB);
+console.log(listaA);
+
+let string = "Olá";
+let mensagem = string;
+mensagem = "Olá, Bem vindo";
+
+console.log(mensagem);
+console.log(string);
+
+let objA = { nome: "Millene" };
+let objB = objA;
+objB.idadeObj = 34;
+
+console.log(objB);
+console.log(objA);
+
+let listaC = [...listaA];
+console.log(listaC);
+listaC[3] = 100;
+
+console.log(listaC);
+console.log(listaA);
+
+let objC = { ...objA };
+objC.corCabelo = "Castanho";
+console.log(objC);
+console.log(objA);
