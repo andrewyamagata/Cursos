@@ -9,6 +9,9 @@ let pedido = {
     suco: 4,
 };
 
+// Múltiplos Parâmetros
+
+// 3 parâmetros
 function enviarNotificacao(nome, idPedido, email) {
     console.log(
         `Enviando e-mail para ${email} confirmando o pedido de número ${idPedido}`,
@@ -19,7 +22,7 @@ function enviarNotificacao(nome, idPedido, email) {
 enviarNotificacao(pedido.nome, pedido.id, pedido.email);
 
 // Função principal que irá calcular e retornar o valor do pedido
-
+// 4 parâmetros
 function processarPedido(id, item1, item2, item3) {
     let totalPedido = item1 + item2 + item3;
     console.log("Pedido: " + id + " Processado");
