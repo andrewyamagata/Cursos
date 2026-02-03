@@ -20,17 +20,32 @@ calcularMedia(8, 8, 7);
 // Ao término do processo, devemos ter a mensagem "a média final desse aluno é x" (sendo x o
 // resultado do cálculo)
 
-function mediaFinal(mediaPf, pf) {
-    let notaMediaFinal = (mediaPf + pf) / 2;
-    console.log(`A média final desse aluno é ${notaMediaFinal}`);
+function calcularMediaAdaptada(nota1, nota2, nota3) {
+    const notaMediaNotas = (nota1 + nota2 + nota3) / 3;
+    return notaMediaNotas;
 }
 
-mediaFinal(mediaPf, 9);
+function calcularMediaFinal(nota1, nota2, nota3, notaFinal) {
+    const mediaSemPf = calcularMediaAdaptada(nota1, nota2, nota3);
+    const mediaFinal = (mediaSemPf + notaFinal) / 2;
+    console.log(`A média final desse aluno é ${mediaFinal}`);
+}
+
+calcularMediaFinal(8, 8, 7, 7);
 
 // 03. Escreva uma função que recebe do usuário um valor de temperatura em graus Celsius e escreve na
 // tela o texto:
 // a temperatura correspondente em Farenheit é de xºF (sendo x o resultado da conversão.)
 // Obs: temperatura em Farenheit = (9/5)*( temperatura em Celsius ) + 32
+
+function calcularTemperaturaFarenheit(temperaturaCelcius) {
+    const temperaturaFarenheit = (9 / 5) * temperaturaCelcius + 32;
+    console.log(
+        `A temperatura correspondente em Farenheit é de ${temperaturaFarenheit}ºF`,
+    );
+}
+
+calcularTemperaturaFarenheit(35);
 
 // 04. Quando estava passeando em Nova York, Bruno se surpreendeu com uma realidade diferente da
 // que conhecia. Ao tentar pagar um produto, ele percebeu que o valor cobrado era sempre um pouco
@@ -39,3 +54,10 @@ mediaFinal(mediaPf, 9);
 // é de 8,875% em cima do valor do produto. Faça uma função que recebe o valor do produto presente na
 // etiqueta e registre na tela a frase:
 // O valor a ser pago é x (sendo x o resultado do acréscimo dos impostos sobre o valor inicial).
+
+function calcularValorFinal(valorProduto) {
+    const valorFinal = valorProduto * 1.08875;
+    console.log(`O valor a ser pago é de R$ ${valorFinal}`);
+}
+
+calcularValorFinal(155);
