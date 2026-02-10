@@ -40,4 +40,32 @@ let frutas = ["maçã", "uva", "laranja"];
 
 console.log(frutas.indexOf("laranja"));
 
-console.log(frutas.splice(1, 1));
+console.log(frutas.splice(1, 1)); // inicio, quantidade de elementos
+console.log(frutas);
+
+console.log(frutas.splice(1, 1, 10)); // substituir um elemento - inicio, quantidade, valor substituido
+console.log(frutas);
+
+//
+
+let frutas2 = ["maçã", "melão", "manga", "carambola"];
+
+console.log(frutas2.includes("manga"));
+console.log(frutas2.includes("kiwi"));
+
+// todos os elementos
+console.log(
+    frutas2.every(function (fruta) {
+        return fruta.includes("m");
+    }),
+);
+
+// algum elemento
+console.log(
+    frutas2.some(function (fruta) {
+        return fruta.includes("c");
+    }),
+);
+
+// join
+console.log(frutas2.join("-"));
