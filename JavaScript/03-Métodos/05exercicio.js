@@ -6,6 +6,12 @@ exercicio1n.splice(0, 1, "Produto C");
 exercicio1n.sort();
 console.log(exercicio1n);
 
+// Outra forma de fazer o exercício 1, porém não podemos usar no exercício 2.
+let carrinho = ["Produto A", "Produto B"];
+carrinho.push("Produto C");
+carrinho.shift();
+console.log(carrinho);
+
 // Exercício 2: Dado o array ['Produto X', 'Produto Y'], adicione 'Produto Z' ao final e una com a nova lista ['Produto A', 'Produto B']. Exiba a lista final.
 let exercicio2 = ["Produto X", "Produto Y"];
 
@@ -21,6 +27,13 @@ console.log(exercicio3.includes("Lápis"));
 console.log(exercicio3.includes("Agenda"));
 
 // Exercício 4: Dado o array [2, 5, 8, 1], verifique se pelo menos um dos números é maior que 7.
-// Exemplo de Saída: /true
+let exercicio4 = [2, 5, 8, 1];
+
+let resultadoSome = exercicio4.some((numero) => numero > 7);
+console.log("Resultado: ", resultadoSome);
+
 // Exercício 5: Dado o array [4, 6, 8, 2], verifique se todos os números são maiores que 3.
-// Exemplo de Saída: false
+let exercicio5 = [4, 6, 8, 2];
+
+let resultadoEvery = exercicio5.every((numero) => numero > 3);
+console.log("Resultado: ", resultadoEvery);
