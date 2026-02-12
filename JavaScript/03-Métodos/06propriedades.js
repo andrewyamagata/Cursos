@@ -7,6 +7,9 @@ const objeto = {
     },
 };
 
+console.log(objeto.propriedade);
+objeto.metodos();
+
 const string = "Eu sou louco por javascript";
 console.log(string.length);
 
