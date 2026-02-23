@@ -6,15 +6,33 @@ const Venda = {
     produto: "Calça",
     quantidade: 15,
     precoUnitario: 120,
-    desconto: 20,
+    desconto: 0,
+    calcularTotal: function () {
+        const total = this.quantidade * this.precoUnitario;
+        return total - total * (this.desconto / 100);
+    },
+
+    detalharVenda: function () {
+        return `Produto: ${this.produto}, 
+        Quantidade: ${this.quantidade},
+        Preço Unitário: ${this.precoUnitario},
+        Total: ${this.calcularTotal()}`;
+    },
 };
 
-console.log(Venda);
-
-return (calcularTotal = quantidade * precoUnitario - desconto);
+console.log(Venda.detalharVenda());
 
 // Exercício 2: Adicione um método ao objeto Venda chamado aplicarDesconto que recebe um valor percentual e atualiza o desconto da venda.
 // Aplique um desconto de 10% e verifique o valor total com o método calcularTotal.
+
+Venda.aplicarDesconto = function (percentual) {
+    this.desconto = percentual;
+};
+
+Venda.aplicarDesconto(10);
+console.log(
+    `O desconto foi de: ${Venda.desconto}%, a Venda: ${Venda.detalharVenda()}`,
+);
 
 // Exercício 3: Adicione um método ao objeto Venda chamado atualizarQuantidade que recebe um número e altera a quantidade do produto na venda.
 // Atualize a quantidade e verifique o total da venda após a atualização.
