@@ -36,9 +36,20 @@ console.log(
 
 // Exercício 3: Adicione um método ao objeto Venda chamado atualizarQuantidade que recebe um número e altera a quantidade do produto na venda.
 // Atualize a quantidade e verifique o total da venda após a atualização.
+Venda.atualizarQuantidade = function (novaQuantidade) {
+    this.quantidade = novaQuantidade;
+};
+
+Venda.atualizarQuantidade(780);
+console.log(
+    `A quantidade foi de: ${Venda.quantidade}, a Venda: ${Venda.detalharVenda()}`,
+);
 
 // Exercício 4: Adicione um método chamado verificarEstoque que recebe a quantidade disponível em estoque e
 // retorna uma mensagem fixa indicando se a venda pode ser realizada ou se é necessário ajustar a quantidade.
+Venda.verificarEstoque = function (estoqueDisponivel) {
+    return "Verificação concluída: " + (this.quantidade <= estoqueDisponivel);
+};
 
 // Exercício 5: Retorne um array com todas as suas propriedades e valores do objeto Venda. Exiba as propriedades e valores em um formato legível.
 
