@@ -51,6 +51,8 @@ Venda.verificarEstoque = function (estoqueDisponivel) {
     return "Verificação concluída: " + (this.quantidade <= estoqueDisponivel);
 };
 
+console.log(Venda.verificarEstoque(0));
+
 // Exercício 5: Retorne um array com todas as suas propriedades e valores do objeto Venda. Exiba as propriedades e valores em um formato legível.
 
 // Exercício 6: Obtenha um array com os nomes de todas as propriedades do objeto Venda. Exiba as propriedades do objeto.
