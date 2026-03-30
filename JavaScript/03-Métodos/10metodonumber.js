@@ -39,3 +39,17 @@ console.log(Number.parseInt(flutuanteString));
 console.log(Number.parseInt(inteiroString));
 
 console.log(Number.parseFloat(flutuanteString).toFixed(2));
+
+//NaN (Not A Number)
+let notANumber = NaN;
+let notANumber2 = 0 / 0;
+let string = Number("Olá");
+
+console.log(notANumber, notANumber2, string);
+
+//Infinity / - Infinity
+let infinito = Infinity; // -Infinity
+let infinito2 = 1 / 0; // -1/0
+let multiplicacao = Number.MAX_VALUE * 2;
+
+console.log(infinito, infinito2, multiplicacao);
