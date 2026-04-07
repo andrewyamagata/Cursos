@@ -26,8 +26,12 @@ console.log(soma2);
 //Você tem um valor financeiro com várias casas decimais e deseja exibi-lo com apenas duas
 //casas decimais.
 
+const valorFinanceiro = 1234.56789;
+
 //Exercício 4: Ajustar a precisão de um número
 //Você tem um número muito grande e precisa exibi-lo com uma precisão específica.
+
+const valorGrande = 12345.6789;
 
 // Exercício 5: Verificar se a entrada é um número válido
 //  Você recebe uma entrada do usuário e precisa garantir que seja um número válido antes de
