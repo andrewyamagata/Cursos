@@ -19,7 +19,7 @@ const numero2 = "20.5";
 const soma = Number.parseFloat(numero1) + Number.parseFloat(numero2);
 console.log(soma);
 
-const soma2 = parseFloat(numero1) + parseFloat(numero2); //consegue interpretar que é um número ao usar parseFloat
+const soma2 = parseFloat(numero1) + parseFloat(numero2); //consegue interpretar que é um número ao usar parseFloat direto semo Number
 console.log(soma2);
 
 // Exercício 3: Arredonde valores financeiros
@@ -27,15 +27,22 @@ console.log(soma2);
 //casas decimais.
 
 const valorFinanceiro = 1234.56789;
+const valorFormatado = valorFinanceiro.toFixed(2);
+console.log(`Valor formatado: ${valorFormatado}`); //1234.57
 
 //Exercício 4: Ajustar a precisão de um número
 //Você tem um número muito grande e precisa exibi-lo com uma precisão específica.
 
 const valorGrande = 12345.6789;
+const valorGrandeFormatado = valorGrande.toPrecision(4);
+console.log(`Valor com precisão é ${valorGrandeFormatado}`); // 1.235e+4
 
 // Exercício 5: Verificar se a entrada é um número válido
 //  Você recebe uma entrada do usuário e precisa garantir que seja um número válido antes de
 //  realizar qualquer operação.
+
+const entrada = "123abc";
+const entradaValida = "123";
 
 //  Exercício 6: Verificar se o número é finito
 //  Você quer garantir que um número não seja Infinity ou NaN antes de usá-lo em cálculos.
