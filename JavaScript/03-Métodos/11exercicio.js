@@ -44,5 +44,31 @@ console.log(`Valor com precisão é ${valorGrandeFormatado}`); // 1.235e+4
 const entrada = "123abc";
 const entradaValida = "123";
 
+//NaN - isNaN (true/false)
+const entradaConvertida = Number(entrada);
+const entradaValidaConvertida = Number(entradaValida);
+console.log(entradaConvertida);
+console.log(entradaValidaConvertida);
+
+console.log(Number.isNaN(entradaConvertida)); // NaN - entrada inválida = true
+console.log(Number.isNaN(entradaValidaConvertida)); // 123 - entrada válida = false
+
+//Segunda forma
+
+console.log(Number.isNaN(entradaConvertida) === false); // false (entrada inválida)
+console.log(Number.isNaN(entradaValidaConvertida) === false); // true (entrada verdadeira)
+
 //  Exercício 6: Verificar se o número é finito
 //  Você quer garantir que um número não seja Infinity ou NaN antes de usá-lo em cálculos.
+
+const numero = 1 / 0;
+const notNumber = NaN;
+const string = "abc";
+const valorValido = 123;
+
+console.log(numero);
+console.log(Number.isFinite(numero));
+console.log(Number.isFinite(notNumber));
+console.log(Number.isFinite(string));
+console.log(Number.isFinite(valorValido));
+console.log(isFinite(valorValido));
